@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    color: crimson;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 2px solid crimson;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.blood-drip {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, darkred, crimson, darkred);
+    animation: blooddrip 2s infinite alternate;
+}
+
+@keyframes blooddrip {
+    0% { transform: scaleY(1); }
+    100% { transform: scaleY(1.5); }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+main {
+    padding: 30px;
+}
+
+input, textarea {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid crimson;
+    background-color: black;
+    color: white;
+}
+
+button {
+    background-color: crimson;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
